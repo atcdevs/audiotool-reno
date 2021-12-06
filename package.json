@@ -10,7 +10,7 @@
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"update": "find ./public/* ! -name index.html -print0 | xargs -0 -I file cp file ./extension",
+		"update": "find ./public/* ! -name index.html -maxdepth 0 -print0 | xargs -0 -I file cp -vr file ./extension",
 		"dev": "concurrently --raw \"npm:start\" \"nodemon\""
 	},
 	"dependencies": {
