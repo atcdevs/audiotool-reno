@@ -10,7 +10,8 @@
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"update": "find ./public/* ! -name index.html -print0 | xargs -0 -I file cp file ./extension",
+		"dev": "concurrently --raw \"npm:start\" \"nodemon\""
 	},
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.0",
@@ -19,6 +20,11 @@
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
 		"react-scripts": "^4.0.3"
+	},
+	"devDependencies": {
+		"@types/chrome": "^0.0.168",
+		"concurrently": "^6.4.0",
+		"nodemon": "^2.0.15"
 	},
 	"eslintConfig": {
 		"extends": [
@@ -34,5 +40,13 @@
 			"last 2 Chrome versions"
 		]
 	},
-	"private": true
+	"private": true,
+	"nodemonConfig": {
+		"watch": [
+			"public"
+		],
+		"exec": "npm run update",
+		"ext": "js,json,css",
+		"delay": 10000
+	}
 }

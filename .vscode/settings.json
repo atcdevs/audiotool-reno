@@ -7,8 +7,10 @@
 	"workspace.isHidden": true,
 	"files.exclude": {
 		".editorconfig": true,
+		".env": true,
 		".gitignore": true,
 		".prettierrc": true,
+		"extension": true,
 		"node_modules": true,
 		"package-lock.json": true
 	},
