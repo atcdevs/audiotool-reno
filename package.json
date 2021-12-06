@@ -42,11 +42,11 @@
 	},
 	"private": true,
 	"nodemonConfig": {
+		"exec": "npm run update",
+		"ext": "js,json,css,png",
 		"watch": [
 			"public"
 		],
-		"exec": "npm run update",
-		"ext": "js,json,css",
 		"delay": 10000
 	}
 }
