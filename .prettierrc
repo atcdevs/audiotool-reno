@@ -1,0 +1,8 @@
+# Help: https://prettier.io/docs/en/configuration.html
+
+printWidth: 90
+tabWidth: 4
+useTabs: true
+semi: false
+trailingComma: "none"
+bracketSameLine: true

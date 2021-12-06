@@ -1,0 +1,19 @@
+{
+	// Workspace
+	"editor.rulers": [80, 90],
+
+	// Extensions
+	// Fooxly.workspace
+	"workspace.isHidden": true,
+	"files.exclude": {
+		".editorconfig": true,
+		".gitignore": true,
+		".prettierrc": true,
+		"node_modules": true,
+		"package-lock.json": true
+	},
+
+	// streetsidesoftware.code-spell-checker
+	"cSpell.words": ["audiotool"],
+	"cSpell.ignoreWords": ["browserslist"]
+}
